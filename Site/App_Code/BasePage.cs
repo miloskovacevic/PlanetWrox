@@ -17,9 +17,23 @@ public class BasePage : System.Web.UI.Page
         }
     }
 
+    private void Page_PreInit(object sender , EventArgs e)
+    {
+        HttpCookie preferredTheme = Request.Cookies.Get("PreferredTime");
+        if (preferredTheme != null)
+        {
+            string folder = Server.MapPath("~/App_Themes/" + preferredTheme.Value);
+            if (System.IO.Directory.Exists(folder))
+            {
+                Page.Theme = preferredTheme.Value;
+            }
+        }
+    }
+
     public BasePage()
     {
         this.PreRender += Page_PreRender;
+        this.PreInit += Page_PreInit;
     }
 
 }
