@@ -1,36 +1,36 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CssDemo.aspx.cs" Inherits="Demos_CssDemo" %>
-
+﻿<%@ Page Title="CSS Demo" Language="C#" AutoEventWireup="true" CodeFile="CssDemo.aspx.cs" Inherits="Demos_CssDemo" %>
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        h1 {
-            font-size: 20px;
-            color: green;
-        }
-        p {
-            color: blue;
-            font-style: italic;
-        }
+  <title></title>
+  <style type="text/css">
+    h1
+    {
+      font-size: 20px;
+      color: Green;
+    }
 
-        .RightAligned {
-            text-align: right;
-            border: 1px solid Black;
-border-left-color: Blue;
-        }
-    </style>
+    p
+    {
+      color: Blue;
+      font-style: italic;
+    }
+
+    .RightAligned
+    {
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+  <form id="form1" runat="server">
     <div>
-        <h1>Welcome to this CSS Demo page</h1>
-        <p>CSS makes it super easy to style your pages.</p>
-        <p class="RightAligned">
-             With very little code, you can quickly change the looks of a page.
-        </p>
+      <h1>Welcome to this CSS Demo page</h1>
+      <p>CSS makes it super easy to style your pages.</p>
+      <p class="RightAligned">
+        With very little code, you can quickly change the looks of a page.
+      </p>
     </div>
-    </form>
+  </form>
 </body>
 </html>

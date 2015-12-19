@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 public partial class Demos_CodeBehind : BasePage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        Label1.Text = "Time is (behind): " + DateTime.Now.ToString();
-    }
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    Label1.Text = "Hello World; the time is now " + DateTime.Now.ToString();
+  }
 }

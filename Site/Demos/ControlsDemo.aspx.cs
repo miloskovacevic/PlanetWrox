@@ -7,12 +7,13 @@ using System.Web.UI.WebControls;
 
 public partial class Demos_ControlsDemo : BasePage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
+  protected void Page_Load(object sender, EventArgs e)
+  {
 
-    }
-    protected void SubmitButton_Click(object sender, EventArgs e)
-    {
-        Result.Text = "Yuh name is : " + YourName.Text;
-    }
+  }
+
+  protected void SubmitButton_Click(object sender, EventArgs e)
+  {
+    Result.Text = "Your name is " + YourName.Text;
+  }
 }

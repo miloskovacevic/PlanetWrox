@@ -7,16 +7,13 @@ using System.Web.UI.WebControls;
 
 public partial class Demos_State : BasePage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
+  protected void Page_Load(object sender, EventArgs e)
+  {
 
-    }
-    protected void Button1_Click(object sender, EventArgs e)
-    {
-        Label1.Text = DateTime.Now.ToString();
+  }
 
-        List<int> listaBrojeva = new List<int>() {1, 5, 6, 8};
-
-
-    }
+  protected void SetDate_Click(object sender, EventArgs e)
+  {
+    Label1.Text = DateTime.Now.ToString();
+  }
 }
