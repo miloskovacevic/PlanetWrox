@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 public partial class Demos_Target : BasePage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        Label1.Text = Request.QueryString.ToString();
-    }
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    Label1.Text = Request.QueryString.ToString();
+  }
 }

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Source" Language="C#" MasterPageFile="~/MasterPages/Frontend.master" AutoEventWireup="true" CodeFile="Source.aspx.cs" Inherits="Demos_Source" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
-    <h1>Source</h1>
+<asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" runat="Server">
 </asp:Content>
+

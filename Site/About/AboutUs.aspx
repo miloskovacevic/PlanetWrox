@@ -2,13 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
-    Hello guys!
-    Our small team is very proud that is serving You with best products that money can buy!
-    We are team of passionate individuals consisted of developers, designers and enterpreneurs 
-    that work hard on bringing your ideas to realty!
-    Please contact us ASAP!<br />
-    <asp:Button ID="Button1" runat="server" Text="Button" />
-    <br />
-&nbsp;<Wrox:Banner runat="server" ID="Banner" DisplayDirection="Horizontal" />
- </asp:Content>
+  <h1>About Us</h1>
+  <p>
+    Planet Wrox is a sample site that comes with the book Beginning ASP.NET 4.5 in C# and VB by Imar Spaanjaars.</p>
+  <p>
+    The site demonstrates an on-line community site designed to share reviews of CDs and concerts. Additionally, users are invited to upload pictures from concerts they have been to (the so called Gig Pics) to show the world what cool concerts they have seen.
+  </p>
+  <p>
+    Wrox is a trademark or registered trademark of Wiley Publishing, Inc. Used by permission.
+  </p>
+  <asp:Button ID="Button1" runat="server" Text="Button" />
+  <Wrox:Banner ID="Banner2" runat="server" DisplayDirection="Horizontal" />
+</asp:Content>
 

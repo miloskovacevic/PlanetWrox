@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Frontend.master.cs" Inherits="MasterPages_Frontend" %>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -10,21 +9,26 @@
 </head>
 <body>
   <form id="form1" runat="server">
+
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+
+
     <div id="PageWrapper">
       <header><a href="/"></a></header>
       <nav>
-          <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
-          
-          <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
-             <LevelStyles>
-                 <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
-             </LevelStyles>
-          </asp:TreeView>
-
-          <asp:SiteMapDataSource runat="server" ID="SiteMapDataSource1" ShowStartingNode="False"></asp:SiteMapDataSource>
+        <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
+        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
+          <LevelStyles>
+            <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
+          </LevelStyles>
+        </asp:TreeView>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
       </nav>
-      <section id="MainContent"> 
-        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br /><br />
+      <section id="MainContent">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        <br />
+        <br />
         <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
         </asp:ContentPlaceHolder>
       </section>
@@ -34,11 +38,10 @@
           <asp:ListItem>Monochrome</asp:ListItem>
           <asp:ListItem>DarkGrey</asp:ListItem>
         </asp:DropDownList>
-          <br />
-          <br />
-          <br />
-          <!-- added banner which is configured in Web.config -->
-          <Wrox:Banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
+        <br />
+        <br />
+        <Wrox:Banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
+        <br />
       </aside>
       <footer>Footer Goes Here</footer>
     </div>

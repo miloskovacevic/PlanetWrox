@@ -26,7 +26,6 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
         }
       }
     }
-
     switch (Page.Theme.ToLower())
     {
       case "darkgrey":

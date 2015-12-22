@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 public partial class Demos_Source : BasePage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        Server.Transfer("Target.aspx?Test=SomeValues");
-    }
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    Server.Transfer("Target.aspx?Test=SomeValue");
+  }
 }

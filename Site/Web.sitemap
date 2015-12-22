@@ -9,7 +9,6 @@
     <siteMapNode url="~/About/Default.aspx" title="About" description="About this Site">
       <siteMapNode url="~/About/Contact.aspx" title="Contact Us" description="Contact Us" />
       <siteMapNode url="~/About/AboutUs.aspx" title="About Us" description="About Us" />
-      <siteMapNode url="~/About/CrniFaca.aspx" title="Crni Faca" description="Crni Faca" />
     </siteMapNode>
     <siteMapNode url="~/Login.aspx" title="Login" description="Log in to this web site" />
   </siteMapNode>

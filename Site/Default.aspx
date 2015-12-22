@@ -12,6 +12,5 @@
   <p>
     You can <a href="Login.aspx">log in</a> here
   </p>
-
 </asp:Content>
 
