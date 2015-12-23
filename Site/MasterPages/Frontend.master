@@ -6,6 +6,7 @@
   <asp:ContentPlaceHolder ID="head" runat="server">
   </asp:ContentPlaceHolder>
   <script src="/Scripts/modernizr-2.6.2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 </head>
 <body>
   <form id="form1" runat="server">
@@ -30,7 +31,11 @@
         <br />
         <br />
         <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+
+
         </asp:ContentPlaceHolder>
+
+
       </section>
       <aside id="Sidebar">
         Select a theme<br />

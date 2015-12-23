@@ -16,6 +16,6 @@ public partial class Demos_WebServices : BasePage
   [WebMethod]
   public static string HelloWorld(string name)
   {
-    return string.Format("Hello {0}", name);
+    return string.Format("Hello {0}, this comes from PageMethod!", name);
   }
 }
