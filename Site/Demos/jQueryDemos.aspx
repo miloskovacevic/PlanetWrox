@@ -35,7 +35,24 @@
   <script type="text/javascript">
     $(function ()
     {
-      // Examples go here
+        //$(':header').css('background-color', 'red');
+        //$('td:contains("Row 3")').css('background-color', 'red');
+        //$(':header:has("span")').css('color', 'green');
+        //$('#DemoTable tr:last').css('background-color', 'yellow');
+        $("#DemoTable tr").bind('mouseover', function () {
+            $(this).css('background-color', 'yellow');
+        }).bind('mouseout', function () {
+            $(this).css('background-color', '');
+        });
+
+        $('h1').animate({
+            opacity: 0.4,
+            marginLeft: '50px',
+            fontSize: '50px'
+        }, 1500);
+        //$('h1').show(1000);
+
+
     });
   </script>
 </asp:Content>
