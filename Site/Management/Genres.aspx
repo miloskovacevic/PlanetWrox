@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" Runat="Server">
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowPaging="True" AllowSorting="True">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowPaging="True" AllowSorting="True" Height="381px" Width="383px">
     <Columns>
         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" ButtonType="Button" />
         <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
@@ -12,6 +12,22 @@
         <asp:BoundField DataField="SortOrder" HeaderText="SortOrder" SortExpression="SortOrder" />
     </Columns>
 </asp:GridView>
+
+    
+<asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False"
+                     DataKeyNames="Id" DataSourceID="SqlDataSource1" DefaultMode="Insert"
+                     Height="50px" Width="125px">
+      <Fields>
+        <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False"
+                        ReadOnly="True" SortExpression="Id" />
+        <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+        <asp:BoundField DataField="SortOrder" HeaderText="SortOrder"
+                        SortExpression="SortOrder" />
+        <asp:CommandField ShowInsertButton="True" />
+      </Fields>
+</asp:DetailsView>
+
+    
 
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PlanetWroxConnectionString1 %>" DeleteCommand="DELETE FROM [Genre] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Genre] ([Name], [SortOrder]) VALUES (@Name, @SortOrder)" ProviderName="<%$ ConnectionStrings:PlanetWroxConnectionString1.ProviderName %>" SelectCommand="SELECT [Id], [Name], [SortOrder] FROM [Genre]" UpdateCommand="UPDATE [Genre] SET [Name] = @Name, [SortOrder] = @SortOrder WHERE [Id] = @Id">
     <DeleteParameters>
@@ -27,6 +43,8 @@
         <asp:Parameter Name="Id" Type="Int32" />
     </UpdateParameters>
 </asp:SqlDataSource>
+
+    <br />
 
 </asp:Content>
 
